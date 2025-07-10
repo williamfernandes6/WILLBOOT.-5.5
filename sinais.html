@@ -1,24 +1,16 @@
+
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <title>Painel de Sinais - WillBoot</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Painel de Sinais</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="container" id="painel-sinais">
-    <h2>Painel de Sinais (VIP)</h2>
-    <select id="casa-aposta">
-      <option>ElephantBet</option>
-      <option>Betano</option>
-      <option>Betway</option>
-      <option>PremierBet</option>
-    </select>
-    <div id="sinais">
-      <!-- Sinais com IA aparecerão aqui -->
-    </div>
-    <audio id="alerta-audio" src="sinal-novo.mp3"></audio>
-  </div>
+  <h1 style="text-align:center;color:#ff3c3c;">Sinais Inteligentes - IA WillBoot</h1>
+  <div id="sinais" class="sinal-box">🔄 Carregando sinais da IA...</div>
+  <audio id="alerta-audio" src="sinal-novo.mp3" preload="auto"></audio>
   <script src="script.js"></script>
 </body>
 </html>
