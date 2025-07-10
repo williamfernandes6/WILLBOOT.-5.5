@@ -1,0 +1,33 @@
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+.container {
+  padding: 20px;
+}
+.logo {
+  width: 150px;
+}
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn-red {
+  background-color: #e60000;
+  color: #fff;
+}
+.btn-outline {
+  border: 2px solid #e60000;
+  color: #e60000;
+}
+.planos {
+  list-style: none;
+  padding: 0;
+}
