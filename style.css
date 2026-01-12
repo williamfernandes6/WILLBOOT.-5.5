@@ -1,62 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --bg-dark: #0b0f14;
+  --gold: #d4af37;
+  --gold-soft: #f5e6a8;
+  --text-light: #eaeaea;
+  --card-dark: #121826;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
 body {
-  margin: 0;
-  font-family: 'Arial', sans-serif;
-  background-color: #0d0d0d;
-  color: white;
+  background: radial-gradient(circle at top, #121826, var(--bg-dark));
+  color: var(--text-light);
+  min-height: 100vh;
 }
+
+/* HERO */
 .hero {
+  max-width: 900px;
+  margin: auto;
+  padding: 80px 20px;
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #0d0d0d, #1a0000);
 }
+
 .hero h1 {
-  font-size: 48px;
-  color: #ff0000;
-  text-shadow: 0 0 10px red;
+  font-size: 3rem;
+  color: var(--gold);
+  text-shadow: 0 0 20px rgba(212,175,55,0.4);
 }
-.hero p {
-  font-size: 22px;
-  color: #ccc;
+
+.subtitle {
+  margin-top: 15px;
+  font-size: 1.2rem;
+  color: var(--gold-soft);
 }
-.hero button {
-  font-size: 22px;
-  padding: 15px 30px;
-  background: #ff0000;
-  color: white;
+
+.description {
+  margin: 25px auto;
+  max-width: 700px;
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* FEATURES */
+.features {
+  list-style: none;
+  margin: 30px 0;
+}
+
+.features li {
+  margin: 12px 0;
+  background: var(--card-dark);
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 4px solid var(--gold);
+}
+
+/* BOTÕES */
+.buttons {
+  margin-top: 30px;
+}
+
+button {
+  background: linear-gradient(135deg, var(--gold), #b8962e);
+  color: #000;
   border: none;
-  border-radius: 10px;
-  box-shadow: 0 0 10px red;
+  padding: 15px 28px;
+  font-size: 1rem;
+  border-radius: 30px;
   margin: 10px;
   cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 0 15px rgba(212,175,55,0.4);
+  transition: all 0.3s ease;
 }
-.hero button:hover {
-  background: #ff3333;
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 25px rgba(212,175,55,0.7);
 }
-.plano-vip {
-  border: 2px solid red;
-  border-radius: 20px;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 400px;
-  background: #1a1a1a;
-  box-shadow: 0 0 10px rgba(255,0,0,0.4);
-  text-align: center;
+
+/* AVISO */
+.warning {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  opacity: 0.7;
 }
-.plano-vip h2 {
-  color: #ff3c3c;
-  font-size: 30px;
-}
-.plano-vip p {
-  font-size: 20px;
-  color: #ccc;
-}
-.sinal-box {
-  border: 2px solid #ff0000;
-  margin: 30px auto;
-  max-width: 500px;
-  padding: 20px;
-  border-radius: 15px;
-  background-color: #1a1a1a;
-  text-align: center;
+
+/* CONTADOR */
+.counter {
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: var(--gold-soft);
 }
